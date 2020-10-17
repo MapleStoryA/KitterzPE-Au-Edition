@@ -1,0 +1,8 @@
+_UpgradeReport_Files/*
+.vs/*
+Release/*
+*.old
+*/Release/*
+*.db
+*.opendb
+UpgradeLog.XML

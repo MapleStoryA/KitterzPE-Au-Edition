@@ -1,0 +1,8 @@
+LIBRARY
+EXPORTS
+   SteamAPI_Init
+   SteamUser
+   SteamGameServer_RunCallbacks
+   SteamAPI_RunCallbacks
+   SteamAPI_Shutdown
+   SteamAPI_RestartAppIfNecessary

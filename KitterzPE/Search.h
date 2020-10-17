@@ -1,0 +1,1 @@
+DWORD FindPattern (string Bytes, DWORD dwOffset, bool isPointer);
