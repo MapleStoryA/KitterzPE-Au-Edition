@@ -84,7 +84,7 @@ void PacketEdit::CheckChanges ()
 	if (isSend)
 	{
 		Packet = ToStringArray (SendStructP->Data->Data, SendStructP->Data->Size);
-		BYTE PacketID = HexStrToInt (Packet.substr (0, 2).c_str());
+		short PacketID = HexStrToInt (Packet.substr (0, 2).c_str());
 
 		//Replace
 		int NumChanges = SendMessage (GetDlgItem(hSend, IDC_CHANGESLIST), LB_GETCOUNT, 0, 0);
@@ -117,7 +117,7 @@ void PacketEdit::CheckChanges ()
 		Packet = ToStringArray(&SendStructP->Data->Type, SendStructP->Data->Size);
 
 		//Don't Log
-		BYTE PacketID = SendStructP->Data->Type;
+		short PacketID = SendStructP->Data->Type;
 
 		//Replace
 		int NumChanges = SendMessage (GetDlgItem(hRecv, IDC_CHANGESLIST2), LB_GETCOUNT, 0, 0);
@@ -239,7 +239,7 @@ void PacketEdit::AddToTreeView (HWND hTree)
 		
 
 		//Don't Log
-		BYTE PacketID = HexStrToInt (Packet.substr (0, 2).c_str());
+		short PacketID = HexStrToInt (Packet.substr (0, 2).c_str());
 		int NumChanges = SendMessage (GetDlgItem(hSend, IDC_CHANGESLIST), LB_GETCOUNT , 0, 0);
 		
 		for (int i = 0; i < NumChanges; i++)
@@ -284,7 +284,7 @@ void PacketEdit::AddToTreeView (HWND hTree)
 		Packet = ToStringArray (&SendStructP->Data->Type, SendStructP->Data->Size);
 		
 		//Don't Log
-		BYTE PacketID = SendStructP->Data->Type;
+		short PacketID = SendStructP->Data->Type;
 		int NumChanges = SendMessage (GetDlgItem(hRecv, IDC_CHANGESLIST2), LB_GETCOUNT , 0, 0);
 		
 		for (int i = 0; i < NumChanges; i++)
