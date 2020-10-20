@@ -1,6 +1,7 @@
 # KitterzPE-Audition-Edition
 
 - Only supports receive packets from Audition Redbana.
+- Block / Replace packet does not work yet.
 - Compiled with Visual Studio 2005.
 
 
