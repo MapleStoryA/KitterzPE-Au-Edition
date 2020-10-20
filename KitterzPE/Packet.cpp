@@ -301,7 +301,7 @@ void PacketEdit::AddToTreeView (HWND hTree)
 		}
 
 		//Create Header
-		string All = Packet.substr (0, 2) + " " + Packet.substr(2, 4);
+		string All = Packet.substr (0, 2) + Packet.substr(3, 2);
 
 		//If already exists in a TreeView
 		if (!ItemRootExists (All))
